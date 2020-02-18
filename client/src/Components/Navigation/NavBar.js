@@ -5,6 +5,7 @@ export default function NavBar() {
     return (
         <div className = "Nav">
             <nav>
+                sdfkjhsdfkjhdfj
             </nav>
         </div>
     )
