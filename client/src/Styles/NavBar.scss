@@ -1,4 +1,32 @@
 .Nav{
-    height: 50px;
     background-color: red;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.Nav-Flex{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+@media only screen and (min-width: 768px){
+    .Nav{
+        left: 0;
+        height: 100%;
+        width: 70px;
+        transition: all .4s ease-in-out;
+        &:hover{
+            width: 180px;
+        }
+    }
+    .Nav-Flex{
+        flex-direction: column;
+        height: 100%;
+        margin: auto;
+        a{
+            padding: 3vh;
+        }
+    }
 }
