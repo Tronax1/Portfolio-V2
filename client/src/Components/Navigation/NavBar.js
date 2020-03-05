@@ -7,24 +7,28 @@ export default function NavBar() {
         <nav className = "Nav">
             <ul className = "Nav-Flex">
                 <li>
-                    <NavLink to = "/" exact>
-                        <i class="fas fa-home fa-2x"></i> Home
+                    <NavLink className = "Nav-Links" to = "/" exact>
+                        <i className="fas fa-home fa-2x"></i>
+                        <span>Hello</span>
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/About">
-                        <i class="fas fa-address-card fa-2x"></i>
-                        About</NavLink>
+                    <NavLink className = "Nav-Links" to = "/About">
+                        <i className="fas fa-address-card fa-2x"></i>
+                        <span>About</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Projects">
-                        <i class="fas fa-project-diagram fa-2x"></i>
-                        Projects</NavLink>
+                    <NavLink className = "Nav-Links" to = "/Projects">
+                        <i className="fas fa-project-diagram fa-2x"></i>
+                        <span>Projects</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Contact">
-                        <i class="fas fa-id-card-alt fa-2x"></i>
-                        Contact</NavLink>
+                    <NavLink className = "Nav-Links" to = "/Contact">
+                        <i className="fas fa-envelope fa-2x"></i>
+                        <span>Contact</span>
+                    </NavLink>
                 </li>
             </ul>
         </nav>
