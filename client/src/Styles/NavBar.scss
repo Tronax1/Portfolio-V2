@@ -30,7 +30,7 @@
         transition: all .4s ease-in-out;
         span{
             display: none;
-            margin-left: 1rem;
+            margin-left: 3rem;
         }
         &:hover{
             width: 16rem;
@@ -52,8 +52,8 @@
     }
     .Nav-Links{
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
         height: 5rem;
+        padding-left: 1rem;
     }
 }

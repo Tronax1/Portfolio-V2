@@ -1,9 +1,14 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
+import '../../Styles/ProjectsPage.scss'
+import Projects from './Projects'
 
 export default function ProjectsPage() {
     return (
-        <div>
-            projects
+        <div className = "Project-Flex">
+            {Projects.map((item, i) =>(
+                <ProjectCard key={i}/>
+            ))}
         </div>
     )
 }
