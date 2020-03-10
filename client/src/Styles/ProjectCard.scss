@@ -1,16 +1,25 @@
 .Card-bg{
-    width: 25vw;
-    height: 100vh;
+    width: 50%;
+    height: 50vh;
     background-color: gray;
     display: flex;
     flex-direction: column;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    position: relative;
 }
 .Card-Header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img{
-        height: 30vh;
-        width: 20vw;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &:hover{
+        transition: all .3s ease-in-out;
+        background-color: gray;
+        opacity: 0.6;
     }
 }
