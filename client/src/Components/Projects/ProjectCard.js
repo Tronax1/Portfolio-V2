@@ -7,6 +7,8 @@ export default function ProjectCard() {
         <div className = "Card-bg">
             <img src={TestImage} alt="" />
                 <div className = "Card-Header">
+                    <button>About</button>
+                    <button>View Project</button>
                 </div>
         </div>
     )
