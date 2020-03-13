@@ -1,4 +1,10 @@
 .Project-Flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+@media only screen and (min-width: 768px){
+    .Project-Flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
