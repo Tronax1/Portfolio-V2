@@ -5,7 +5,7 @@ import TestImage from '../Images/test image.jpg'
 export default function ProjectCard() {
     return (
         <div className = "Card-bg">
-            <img src={TestImage} alt="" />
+            <img className src={TestImage} alt="" />
                 <div className = "Card-Header">
                     <button>About</button>
                     <button>View Project</button>

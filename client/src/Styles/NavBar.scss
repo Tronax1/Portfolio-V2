@@ -1,5 +1,7 @@
+@import "/colors";
+
 .Nav{
-    background-color: red;
+    background-color: $Lowest;
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,9 +17,11 @@
 }
 .Nav-Links{
     text-decoration: none;
+    color: $Primary;
     &:hover{
-        background-color: white;
+        background-color: $Tertiary;
         transition: all .3s ease-in-out;
+        color: white;
     }
     span{
         display: none;
@@ -32,6 +36,7 @@
         span{
             display: none;
             margin-left: 3rem;
+            
         }
         &:hover{
             width: 16rem;
