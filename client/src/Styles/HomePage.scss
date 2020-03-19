@@ -1,3 +1,5 @@
+@import "/colors";
+
 .Home-Flex{
     display: flex;
     flex-direction: column;
@@ -5,8 +7,84 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    align-items: center;
     span{
         color: white;
         font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+.Project-Re{
+    text-decoration: none;
+    background: none;
+    border-style: solid;
+    border-color: $Lowest;
+    font-size: 2rem;
+    background-color: $Secondary;
+    padding: 15px;
+    width: 50%;
+    border-radius: 3px;
+    transition: all .3s ease;
+    color: white;
+    text-align: center;
+    &:hover{
+        border-radius: 30px;
+        border-color: $Primary;
+        transition: all .3s ease;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .background-container{
+        position: fixed;
+        top: 0;
+        left:0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .stars {
+        background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 0;
+    }
+
+    .twinkling{
+        width:10000px;
+        height: 100%;
+        background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+        background-size: 1000px 1000px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2; 
+        -moz-animation:move-background 70s linear infinite;
+        -ms-animation:move-background 70s linear infinite;
+        -o-animation:move-background 70s linear infinite;
+        -webkit-animation:move-background 70s linear infinite;
+        animation:move-background 70s linear infinite;   
+    }
+
+    .clouds{
+        width:10000px;
+        height: 100%;
+        background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+        background-size: 1000px 1000px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+        -moz-animation:move-background 150s linear infinite;
+        -ms-animation:move-background 150s linear infinite;
+        -o-animation:move-background 150s linear infinite;
+        -webkit-animation:move-background 150s linear infinite;
+        animation:move-background 150s linear infinite;
     }
 }
