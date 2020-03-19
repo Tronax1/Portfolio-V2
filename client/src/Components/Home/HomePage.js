@@ -5,10 +5,10 @@ import '../../Styles/HomePage.scss'
 export default function HomePage() {
     return (
         <>
-            <div class="background-container">
-                    <div class="stars"></div>
-                    <div class="twinkling"></div>
-                    <div class="clouds"></div>
+            <div className="background-container">
+                    <div className="stars"></div>
+                    <div className="twinkling"></div>
+                    <div className="clouds"></div>
             </div>
         <div className="Home-Flex">
             <span>
