@@ -1,27 +1,32 @@
+import ChangeGear from '../Images/ChangeGear.png'
+import Discord from '../Images/Discord.png'
+import MoneyManager from '../Images/moneymanager.jpg'
+import Portfolio from '../Images/Portfolio.png'
+
 const Projects = [
     {
-        img: '',
+        img: ChangeGear,
         Description: '',
         Technologies: [],
-        URL: ''
+        URL: 'http://changegear-ticket-system.herokuapp.com/'
     },
     {
-        img: '',
+        img: Discord,
         Description: '',
         Technologies: [],
-        URL: ''
+        URL: 'https://github.com/Tronax1/Aldebaran-'
     },
     {
-        img: '',
+        img: MoneyManager,
         Description: '',
         Technologies: [],
-        URL: ''
+        URL: 'https://managerfolio.herokuapp.com/'
     },
     {
-        img: '',
+        img: Portfolio,
         Description: '',
         Technologies: [],
-        URL: ''
+        URL: 'https://jorge-villarreal.herokuapp.com/'
     }
 ]
 

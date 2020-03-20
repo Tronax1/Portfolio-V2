@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     return (
         <div className = "Project-Flex">
             {Projects.map((item, i) =>(
-                <ProjectCard key={i}/>
+                <ProjectCard key={i} image={item.img} url={item.URL}/>
             ))}
         </div>
     )
