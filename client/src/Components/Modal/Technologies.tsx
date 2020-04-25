@@ -1,10 +1,11 @@
 import React from 'react'
 import '../../Styles/Technologies.scss'
 
-export default function Technologies() {
+const Technologies: React.FC = () => {
     return (
         <div className="Tech">
             Zawarudo
         </div>
     )
 }
+export default Technologies;

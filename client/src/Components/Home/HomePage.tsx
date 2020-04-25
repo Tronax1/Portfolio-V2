@@ -2,7 +2,7 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import '../../Styles/HomePage.scss'
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
     return (
         <>
             <div className="background-container">
@@ -19,3 +19,4 @@ export default function HomePage() {
         </>
     )
 }
+export default HomePage;

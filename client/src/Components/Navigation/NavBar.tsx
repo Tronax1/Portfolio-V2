@@ -2,7 +2,7 @@ import React from 'react'
 import {NavLink, withRouter} from 'react-router-dom'
 import '../../Styles/NavBar.scss'
 
-function NavBar() {
+const NavBar: React.FC = () => {
     return (
         <nav className = "Nav">
             <ul className = "Nav-Flex">

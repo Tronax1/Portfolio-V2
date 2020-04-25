@@ -3,7 +3,12 @@ import '../../Styles/ProjectCard.scss'
 import Modal from '../Modal/Modal'
 import {useState} from 'react'
 
-export default function ProjectCard({image, url}) {
+interface ProjectProperties{
+    image: string,
+    url: string
+}
+
+const ProjectCard: React.FC<ProjectProperties> = ({image, url}) => {
     const [show, setShow] = useState(false);
     return (
         <>
@@ -20,3 +25,4 @@ export default function ProjectCard({image, url}) {
         </>
     )
 }
+export default ProjectCard;
