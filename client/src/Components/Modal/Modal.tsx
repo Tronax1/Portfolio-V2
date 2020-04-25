@@ -3,7 +3,12 @@ import Technologies from './Technologies'
 
 import '../../Styles/Modal.scss'
 
-export default function Modal({show, toggleShow}) {
+interface Display {
+    show: boolean,
+    toggleShow: (state: boolean) => void
+}
+
+const Modal: React.FC<Display> = ({show, toggleShow}) => {
     if(show){
         return (
             <>
@@ -42,3 +47,4 @@ export default function Modal({show, toggleShow}) {
         return null;
     }
 }
+export default Modal;

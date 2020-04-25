@@ -2,7 +2,7 @@ import React from 'react'
 import TestImage from '../Images/test image.jpg'
 import '../../Styles/AboutPage.scss'
 
-export default function AboutPage() {
+const AboutPage: React.FC = () => {
     return (
         <>
             
@@ -25,3 +25,4 @@ export default function AboutPage() {
         </>
     )
 }
+export default AboutPage;

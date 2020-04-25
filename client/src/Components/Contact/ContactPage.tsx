@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../Styles/ContactPage.scss"
 
-export default function ContactPage() {
+const ContactPage: React.FC = () => {
     return (
         <div>
             <form className = "Form">
@@ -14,3 +14,4 @@ export default function ContactPage() {
         </div>
     )
 }
+export default ContactPage;
