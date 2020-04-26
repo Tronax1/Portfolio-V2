@@ -5,10 +5,12 @@ import {useState} from 'react'
 
 interface ProjectProperties{
     image: string,
-    url: string
+    url: string,
+    description: string,
+    technologies: Array<string>
 }
 
-const ProjectCard: React.FC<ProjectProperties> = ({image, url}) => {
+const ProjectCard: React.FC<ProjectProperties> = ({image, url, description, technologies}) => {
     const [show, setShow] = useState(false);
     return (
         <>
@@ -21,7 +23,7 @@ const ProjectCard: React.FC<ProjectProperties> = ({image, url}) => {
                                 View Project</a>
                     </div>
             </div>
-            <Modal show={show} toggleShow={setShow}/>
+            <Modal show={show} toggleShow={setShow} modalDesc = {description} modalTech = {technologies}/>
         </>
     )
 }

@@ -13,26 +13,26 @@ interface Project{
 const Projects: Array<Project> = [
     {
         img: ChangeGear,
-        Description: '',
-        Technologies: ['kappa'],
+        Description: 'This is the changegear bleh bleh',
+        Technologies: ['React', 'Redux', 'Node', 'Express', 'MongoDB'],
         URL: 'http://changegear-ticket-system.herokuapp.com/'
     },
     {
         img: Discord,
-        Description: '',
-        Technologies: ['kappa'],
+        Description: 'This is the discord bot stuff',
+        Technologies: ['Node', 'AWS EC2'],
         URL: 'https://github.com/Tronax1/Aldebaran-'
     },
     {
         img: MoneyManager,
-        Description: '',
-        Technologies: ['kappa'],
+        Description: 'The money manager thingy bleh bleh',
+        Technologies: ['React', 'Redux', 'Node', 'Express', 'Firebase'],
         URL: 'https://managerfolio.herokuapp.com/'
     },
     {
         img: Portfolio,
-        Description: '',
-        Technologies: ['kappa'],
+        Description: 'The previous portfolio that is gonna die soon',
+        Technologies: ['React', 'Redux', 'Node', 'Express'],
         URL: 'https://jorge-villarreal.herokuapp.com/'
     }
 ]

@@ -1,10 +1,14 @@
 import React from 'react'
 import '../../Styles/Technologies.scss'
 
-const Technologies: React.FC = () => {
+interface Tech{
+    technology: string
+}
+
+const Technologies: React.FC<Tech> = ({technology}) => {
     return (
         <div className="Tech">
-            Zawarudo
+            {technology}
         </div>
     )
 }
