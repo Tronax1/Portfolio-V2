@@ -1,7 +1,7 @@
 @import "/colors";
 
 .Nav{
-    background-color: $Lowest;
+    background-color: $Tertiary;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,9 +19,9 @@
     text-decoration: none;
     color: $Primary;
     &:hover{
-        background-color: $Tertiary;
+        background-color: $Lowest;
         transition: all .3s ease-in-out;
-        color: white;
+        color: $Primary;
     }
     span{
         display: none;
@@ -30,7 +30,7 @@
 .Active{
     background-color: $Tertiary;
     transition: all .3s ease-in-out;
-    color: white;
+    color: $Lowest;
 }
 @media only screen and (min-width: 768px){
     .Nav{
