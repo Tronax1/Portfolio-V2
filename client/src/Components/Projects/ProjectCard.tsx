@@ -3,14 +3,14 @@ import '../../Styles/ProjectCard.scss'
 import Modal from '../Modal/Modal'
 import {useState} from 'react'
 
-interface ProjectProperties{
+interface ProjectCardProps{
     image: string,
     url: string,
     description: string,
     technologies: Array<string>
 }
 
-const ProjectCard: React.FC<ProjectProperties> = ({image, url, description, technologies}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({image, url, description, technologies}) => {
     const [show, setShow] = useState(false);
     return (
         <>

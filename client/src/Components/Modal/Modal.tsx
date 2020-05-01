@@ -3,14 +3,14 @@ import Technologies from './Technologies'
 
 import '../../Styles/Modal.scss'
 
-interface Display {
+interface ModalProps {
     show: boolean,
     toggleShow: (state: boolean) => void,
     modalDesc: string,
     modalTech: Array<string>
 }
 
-const Modal: React.FC<Display> = ({show, toggleShow, modalDesc, modalTech}) => {
+const Modal: React.FC<ModalProps> = ({show, toggleShow, modalDesc, modalTech}) => {
     if(show){
         return (
             <>

@@ -1,7 +1,7 @@
-import ChangeGear from '../Images/ChangeGear.png'
-import Discord from '../Images/Discord.png'
-import MoneyManager from '../Images/moneymanager.jpg'
-import Portfolio from '../Images/Portfolio.png'
+import {ChangeGear, 
+        Discord, 
+        MoneyManager, 
+        Portfolio} from '../Images';
 
 interface Project{
     img: string,
