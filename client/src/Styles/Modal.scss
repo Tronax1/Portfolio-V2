@@ -35,3 +35,18 @@
         display: flex;
     }
 }
+.Modal-Header{
+    display: flex;
+    justify-content: right;
+}
+.Technologies{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 768px){
+    .Technologies{
+        flex-direction: row;
+    }
+}

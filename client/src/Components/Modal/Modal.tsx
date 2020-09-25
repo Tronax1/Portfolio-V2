@@ -11,6 +11,11 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({show, toggleShow, modalDesc, modalTech}) => {
+    const displayTechnologies = () => {
+        return modalTech.map((item, i) => (
+            <Technologies key={i} technology={item} />
+        ))
+    }
     if(show){
         return (
             <>
@@ -26,10 +31,8 @@ const Modal: React.FC<ModalProps> = ({show, toggleShow, modalDesc, modalTech}) =
                         <p>
                            {modalDesc}
                         </p>
-                        <div>
-                            {modalTech.map((item, i) => (
-                                <Technologies key = {i} technology={item}/>
-                            ))}
+                        <div className = "Technologies">
+                            {displayTechnologies()}
                         </div>
                     </section>
                 </div>

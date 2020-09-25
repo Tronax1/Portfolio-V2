@@ -13,7 +13,7 @@ interface Project{
 const Projects: Array<Project> = [
     {
         img: ChangeGear,
-        Description: 'This is the changegear bleh bleh',
+        Description: 'This is a full stack web application that allows a user to compare ChangeGear ticket information.',
         Technologies: ['React', 'Redux', 'Node', 'Express', 'MongoDB'],
         URL: 'http://changegear-ticket-system.herokuapp.com/'
     },
@@ -25,7 +25,7 @@ const Projects: Array<Project> = [
     },
     {
         img: MoneyManager,
-        Description: 'The money manager thingy bleh bleh',
+        Description: 'This is a full stack application that helps the user keep track of expenses, it also has a mortgage calculator to determine what the house payments per month would be given a down payment, and interest rate. The application also displays whether the user is overspending given the income, as well as the expenses. Last but not least, it shows the current value of a stock given by user input.',
         Technologies: ['React', 'Redux', 'Node', 'Express', 'Firebase'],
         URL: 'https://managerfolio.herokuapp.com/'
     },

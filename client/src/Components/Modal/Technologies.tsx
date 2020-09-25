@@ -8,7 +8,7 @@ interface TechnologiesProps{
 const Technologies: React.FC<TechnologiesProps> = ({technology}) => {
     return (
         <div className="Tech">
-            {technology}
+            <strong>{technology}</strong>
         </div>
     )
 }

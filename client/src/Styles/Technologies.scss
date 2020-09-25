@@ -1,8 +1,12 @@
 @import '/colors';
 
 .Tech{
-    background-color: red;
-    width: 80px;
+    background-color: $Primary;
+    width: 70px;
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 30px;
+    text-align: center;
+    color: $Lowest;
+    justify-content: center;
+
 }
