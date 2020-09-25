@@ -44,8 +44,11 @@
         }
         &:hover{
             width: 16rem;
-            span{ 
+            span{
+                opacity: 0;
+                animation: fadeIn 0.1s ease-in 0.22s forwards ;
                 display: block;
+                
             }
         }
     }
