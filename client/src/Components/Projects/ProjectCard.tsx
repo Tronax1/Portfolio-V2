@@ -4,13 +4,14 @@ import Modal from '../Modal/Modal'
 import {useState} from 'react'
 
 interface ProjectCardProps{
+    title: string,
     image: string,
     url: string,
     description: string,
     technologies: Array<string>
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({image, url, description, technologies}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({title, image, url, description, technologies}) => {
     const [show, setShow] = useState(false);
     return (
         <>
@@ -23,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({image, url, description, techn
                                 View Project</a>
                     </div>
             </div>
-            <Modal show={show} toggleShow={setShow} modalDesc = {description} modalTech = {technologies}/>
+            <Modal show={show} toggleShow={setShow} modalDesc = {description} modalTech = {technologies} modalTitle={title}/>
         </>
     )
 }

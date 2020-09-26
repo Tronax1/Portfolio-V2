@@ -8,7 +8,7 @@ const ProjectsPage: React.FC = () => {
     const displayProjects = () => {
         return Projects.map((item, i) => (
                 <ProjectCard key={i} image={item.img} url={item.URL}
-                    description={item.Description} technologies={item.Technologies} />
+                    description={item.Description} technologies={item.Technologies} title={item.title} />
             ))
     }
     return (

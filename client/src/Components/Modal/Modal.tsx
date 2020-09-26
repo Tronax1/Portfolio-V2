@@ -6,11 +6,12 @@ import '../../Styles/Modal.scss'
 interface ModalProps {
     show: boolean,
     toggleShow: (state: boolean) => void,
+    modalTitle: string,
     modalDesc: string,
     modalTech: Array<string>
 }
 
-const Modal: React.FC<ModalProps> = ({show, toggleShow, modalDesc, modalTech}) => {
+const Modal: React.FC<ModalProps> = ({show, toggleShow, modalTitle, modalDesc, modalTech}) => {
     const displayTechnologies = () => {
         return modalTech.map((item, i) => (
             <Technologies key={i} technology={item} />
@@ -28,6 +29,7 @@ const Modal: React.FC<ModalProps> = ({show, toggleShow, modalDesc, modalTech}) =
                         </span>
                     </section>
                     <section className = "Modal-Body">
+                        <h1>{modalTitle}</h1>
                         <p>
                            {modalDesc}
                         </p>
