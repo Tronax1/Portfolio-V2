@@ -41,8 +41,12 @@
 .Modal-Header{
     display: flex;
     justify-content: right;
+    span {
+        margin-right: 10px;
+    }
 }
 .Technologies{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

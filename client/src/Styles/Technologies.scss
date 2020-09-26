@@ -3,10 +3,13 @@
 .Tech{
     background-color: $Primary;
     width: 5vw;
-    padding: 20px;
+    padding: 15px;
     border-radius: 30px;
     text-align: center;
     color: $Lowest;
     justify-content: center;
     font-size: 1.2vw;
+    &:hover{
+        cursor: default;
+    }
 }

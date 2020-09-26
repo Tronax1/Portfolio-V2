@@ -1,5 +1,6 @@
 import React from 'react'
 import Technologies from './Technologies'
+import Underline from './Underline'
 
 import '../../Styles/Modal.scss'
 
@@ -30,9 +31,12 @@ const Modal: React.FC<ModalProps> = ({show, toggleShow, modalTitle, modalDesc, m
                     </section>
                     <section className = "Modal-Body">
                         <h1>{modalTitle}</h1>
+                            <Underline />
                         <p>
                            {modalDesc}
                         </p>
+                        <h3>Technologies</h3>
+                            <Underline />
                         <div className = "Technologies">
                             {displayTechnologies()}
                         </div>

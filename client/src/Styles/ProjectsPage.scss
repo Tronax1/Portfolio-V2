@@ -1,6 +1,9 @@
+@import "/colors";
+
 .Project-Flex{
     display: flex;
     flex-direction: column;
+    animation: 0.5s ease-in fadeIn 1 forwards;
 }
 @media only screen and (min-width: 768px){
     .Project-Flex{

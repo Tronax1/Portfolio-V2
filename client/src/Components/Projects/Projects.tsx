@@ -10,7 +10,6 @@ interface Project{
     Technologies: Array<string>,
     URL: string
 }
-
 const Projects: Array<Project> = [
     {
         title: 'Change Gear Utility',
